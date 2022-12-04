@@ -5,7 +5,7 @@
 - [Description](#Description)
 - [Software](#Software)
 - [How to Use](#How-to-Use)
-- [Example Data](#Example-Data)
+- [Example](#Example)
 
 # Description
 
@@ -61,5 +61,27 @@ I_Fzz = I_Fxx;
 ```
 It is important to note that finding the Mass Moment of Inertia (MOI) Product Moment of Inertia (POI), and other inertial mass properties is done through a CAD software. I modeled my bicycle by first measuring the length and thickness of each component, and recreating it on SOLDIWORKS. I also included the material that each component was made of. Then, I clicked on the "mass properties" feature and I was able to determine the MOI and POI of each assembly. Below is a display of the SOLIDWORKS mass properties feature.
 
+![](Images/MassPropertiesExample.png)
 
-# Example-Data
+Once all the parameters are defined, compile the code. Now, open the Simulink model. Provide initial conditions to each respective integrator. Providing initial conditions for Integrator and Integrator1 will alter the initial rolling angle rate and steering angle rate, respectively. Providing initial conditions for Integrator3 and Integrator2 will alter the initial rolling angle and steering angle, respectively. All initial conditions must be input in radians. Compile the Simulink diagram and click on each plot moniter and observe the response.
+
+The response displayed in each plot moniter is the torque required to actuate the bicycle back to its equilibrium position over a given amount of time, as well as the steering and rolling angles over a given amount of time. These models can be used to get an understanding of required torque inputs by a human or control system to actuate the bicycle back to a desired position on flat terrains.
+
+# Example
+
+The following response is computed using the parameters already written in the code. The initial conditions for this specific response is:
+
+φ (rolling angle) = 10 degrees, or 0.174533 radians
+dφ/dt (rollong angular rate) = 0 radians
+δ (steering angle) = 0 radians
+dδ/dt (steering angular rate) = 5 degrees per second or 0.0873 radians per second
+
+Rolling torque vs time
+
+
+
+Roll angle vs time
+
+Steering torque vs time
+
+steering angle vs time
