@@ -78,10 +78,17 @@ dδ/dt (steering angular rate) = 5 degrees per second or 0.0873 radians per seco
 
 Rolling torque vs time
 
-
+![](Images/RolltorqueVStime.png)
 
 Roll angle vs time
 
+![](Images/LeanAngleVStime.png)
+
 Steering torque vs time
 
+![](Images/SteertorqueVStime.png)
+
 steering angle vs time
+
+![](Images/SteerAngleVStime.png)
+
