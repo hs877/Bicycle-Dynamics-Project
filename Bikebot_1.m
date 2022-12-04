@@ -1,4 +1,4 @@
-% Subscripts: T total, R rear frame, B rear frame, H front body (handlebar +
+% Subscripts: T total, R rear wheel, B rear frame, H front body (handlebar +
 % fork), F rear wheel, A front assembly (H + F)
 
 %*********************NOTE MKSR UNITS***********************
