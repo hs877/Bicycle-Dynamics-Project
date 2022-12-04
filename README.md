@@ -72,7 +72,7 @@ The response displayed in each plot moniter is the torque required to actuate th
 The following response is computed using the parameters already written in the code. The initial conditions for this specific response is:
 
 φ (rolling angle) = 10 degrees, or 0.174533 radians, 
-dφ/dt (rollong angular rate) = 0 radians, 
+dφ/dt (rolling angular rate) = 0 radians, 
 δ (steering angle) = 0 radians, 
 dδ/dt (steering angular rate) = 5 degrees per second or 0.0873 radians per second
 
